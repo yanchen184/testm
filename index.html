@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>個性特質分析 - 專業心理測試</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-screen" class="screen active">
+            <h1>專業心理測試</h1>
+            <h2>發現你的真實性格特質</h2>
+            <p>透過國際認證的心理測試，了解你的獨特性格組合。</p>
+            <p>本測試包含5個問題，分析結果將具有98%準確率。</p>
+
+            <button id="start-btn">開始測試</button>
+        </div>
+
+        <div id="question-screen" class="screen">
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
+            <div id="question-container">
+                <h2 id="question-text">問題載入中...</h2>
+                <div id="options-container">
+                    <!-- 選項將透過JavaScript動態生成 -->
+                </div>
+            </div>
+        </div>
+
+        <div id="loading-screen" class="screen">
+            <h2>正在分析您的答案...</h2>
+            <div class="loader"></div>
+            <p id="loading-text">正在處理您的回答數據...</p>
+        </div>
+
+        <div id="result-screen" class="screen">
+            <h1>分析結果</h1>
+            <div id="result-content">
+                <h2 id="personality-type">你的性格類型是：<span id="personality-name">分析中...</span></h2>
+                <div id="result-details">
+                    <p>深度分析正在載入...</p>
+                </div>
+                <div id="prank-reveal" class="hidden">
+                    <h1>愚人節快樂！</h1>
+                    <p id="prank-message">這是一個愚人節玩笑！沒有什麼性格測試，只是想讓你會心一笑！</p>
+                    <img id="prank-gif" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWdocGNlbzFxMHJsMnFzbTd0cHpyazRhb201YWJtZ200bjR4Z2kzcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9MFsKQ8A6HCN2/giphy.gif" alt="愚人節快樂">
+                    <button id="share-btn">分享這個玩笑</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
